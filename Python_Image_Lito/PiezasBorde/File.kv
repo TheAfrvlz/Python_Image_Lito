@@ -1,0 +1,20 @@
+<FileChooser>:  
+    BoxLayout:
+        FileChooserListView:
+            canvas.before:
+                color:
+                    rgb:.4,.2,.5
+                rectangle:
+                    pos:self.pos
+                    size: self.size
+            on_selection:root.file_fire_select(*args)
+
+    Label:
+        id: Label
+        size_hint_y: .2
+        canvas.before:
+            color:
+                rgb:1,.5,.4
+            rectangle:
+                pos:self.pos
+                size: self.size
